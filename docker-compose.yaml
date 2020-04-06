@@ -1,0 +1,14 @@
+version: '2.1'
+
+services:
+  open-trade-gateway:
+    image: daocloud.io/quantaxis/qatradegateway:latest
+    volumes:
+      - ./docker/conf:/etc/open-trade-gateway
+      - ./docker/user:/var/local/lib/open-trade-gateway
+      - ./docker/log:/var/log/open-trade-gateway
+    ports:
+      - "7988:7988"
+    expose:
+      - "7988"
+    command: ['/usr/local/bin/open-trade-gateway']

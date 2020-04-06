@@ -1,0 +1,30 @@
+[
+  {
+    "name": "QUANTAXIS",
+    "type": "sim"
+  },
+  {
+    "name": "simnowold",
+    "type": "ctp",
+    "broker_id": "9999",
+    "product_info": "simnow_client_test",
+    "auth_code": "0000000000000000",
+    "trading_fronts": ["tcp://180.168.146.187:10100"]
+  },
+  {
+    "name": "simnow1",
+    "type": "ctpsed",
+    "broker_id": "9999",
+    "product_info": "simnow_client_test",
+    "auth_code": "0000000000000000",
+    "trading_fronts": ["tcp://180.168.146.187:10101"]
+  },
+  {
+    "name": "simnow",
+    "type": "ctpsed",
+    "broker_id": "9999",
+    "product_info": "simnow_client_test",
+    "auth_code": "0000000000000000",
+    "trading_fronts": ["tcp://218.202.237.33:10102"]
+  }
+]

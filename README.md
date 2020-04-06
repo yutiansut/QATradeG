@@ -6,14 +6,34 @@ trade gateway
 感谢天勤提供的OPEN-TRADE-GATEWAY项目,  本项目不提供源代码, 仅供QUANTAXIS用户快速连接OTG和qifi协议使用
 
 
+- 本地部署的OTG版本 支持所有ctp的接口
+
+- 增加了转账的请求部分 以及 可取资金查询
+
+接入程序 python版本 
+
 - https://github.com/yutiansut/qatrader
 - https://github.com/yutiansut/QIFI
 - https://github.com/yutiansut/qaotgbroker
 
+目前行情有关的项目推荐是 基于ctpbee直连ctp+ qamarket-rs (rust写的高性能行情分发采样)
 
-- 本地部署的OTG版本 支持所有ctp的接口
+- http://github.com/yutiansut/qactpbeebroker
+- https://github.com/yutiansut/qamarket-rs
 
-- 增加了转账的请求部分 以及 可取资金查询
+行情的docker-compose被集成在quantaxis的service-future中:
+
+https://github.com/QUANTAXIS/QUANTAXIS/blob/master/docker/qa-service-future/docker-compose.yaml
+
+以及 rust行情替换教程
+http://www.yutiansut.com:3000/topic/5e5e6f026d3b182e88b4f71c
+
+另外你可以直接在本地开启自己的期货模拟盘 只需要行情自己做撮合
+
+https://github.com/yutiansut/qifiaccount
+
+https://github.com/yutiansut/qastrategy
+
 
 
 

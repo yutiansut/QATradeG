@@ -3,6 +3,8 @@ trade gateway
 
 本代码基于OPEN-Trade-Gateway修改而成, 直接部署即可, 内部没有代码 只有编译好的程序
 
+本项目支持 windows/mac/linux 全平台部署 具体可以参考quantaxis项目的docker文档
+
 感谢天勤提供的OPEN-TRADE-GATEWAY项目,  本项目不提供源代码, 仅供QUANTAXIS用户快速连接OTG和qifi协议使用
 
 
